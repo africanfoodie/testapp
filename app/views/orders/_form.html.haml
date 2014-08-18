@@ -6,15 +6,15 @@
         - @order.errors.full_messages.each do |msg|
           %li= msg
   = hidden_field_tag 'plan_id', (params[:plan_id])
-
+  %p You are subscribing to #{(params[:plan_id])}
   .field
     = f.label :quantity
     = f.number_field :quantity
-  .field
-    = f.label :status
-    = f.text_field :status
-  .field
-    = f.label :user
-    = f.text_field :user
+  / .field
+  /   = f.label :status
+  /   = f.text_field :status
+  / .field
+  /   = f.label :user
+  /   = f.text_field :user
   .actions
     = f.submit 'Save'
