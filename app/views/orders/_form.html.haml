@@ -5,10 +5,8 @@
       %ul
         - @order.errors.full_messages.each do |msg|
           %li= msg
+  = hidden_field_tag 'plan_id', (params[:plan_id])
 
-  .field
-    = f.label :type
-    = f.text_field :type
   .field
     = f.label :quantity
     = f.number_field :quantity
