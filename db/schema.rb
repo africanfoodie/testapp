@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140818141112) do
   enable_extension "plpgsql"
 
   create_table "orders", force: true do |t|
-    t.string   "type"
+    t.integer  "plan_id"
     t.integer  "quantity"
     t.string   "status"
     t.integer  "user_id"

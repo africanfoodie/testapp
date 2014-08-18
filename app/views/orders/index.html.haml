@@ -4,13 +4,13 @@
   .col-md-4 
     Fruits Bag
     %br
-    =link_to 'Buy now', fruit_orders_path
+    =link_to 'Buy now', new_order_path(:plan_id => 1)
   .col-md-4 
     Vegetables Bag
     %br
-    =link_to 'Buy now', vegetable_orders_path
+    =link_to 'Buy now', new_order_path(:plan_id => 2)
   .col-md-4 
     Mix Bag
     %br
-    =link_to 'Buy now', mix_orders_path
+    =link_to 'Buy now', new_order_path(:plan_id => 3)
 
